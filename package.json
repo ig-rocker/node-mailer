@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "nodemailer": "^6.9.8",
+    "nodemailer-express-handlebars": "^6.1.0"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "fassstmail",
+  "version": "1.0.0",
+  "main": "server.js",
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
