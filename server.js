@@ -32,39 +32,20 @@ const handlerOptions={
 
 transporter.use('compile', hbs(handlerOptions));
 
-
-// for(const users of  users){
-//     if(user.email){
-//         const mailOptions={
-//             from: 'abc',
-//             template: 'email',
-//             to: user.email,
-//             subject: `Welcome to my company`,
-//             context: {
-//                 name: user.name,
-//                 company: 'My company'
-//             }
-//         }
-//     };
-
-//     //sending mail
-//     try{
-//         await transporter.sendMail(mailOptions);
-//     }catch(error){
-//         console.log(error);
-//     }
-
-
-// }
-
+var mailList=['*****@gmail.com','*****@gmail.com']
 
 var mailOptions={ from: 'abc',
                 template: 'email',
-                to: 'cse.shivam98@gmail.com',
-                subject: `Welcome to my company`,
+                to: mailList,
+                subject: `Looking for Job Opportunities`,
                 context: {
                     name: 'Pandey',
                     company: 'Rocktech'
+                },
+                attachments: {
+                    filename:"Satyam Resume",
+                    path:"satyam-maurya2024.docx.pdf",
+                    contentType: 'application/pdf'
                 }
             }
 
